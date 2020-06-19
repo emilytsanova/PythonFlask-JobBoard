@@ -1,0 +1,21 @@
+<macro name='show_job(job)'>
+  <div class="card adjust-height">
+    <header class="card-header">
+      <p class="card-header-title">
+        <a content="{{ job['title'] }}">
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <p>
+            <a content="{{ job['employer_name'] }}\n${{ job['salary'] }}\n{{ job['description'] }}"
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class='columns, is-multiline'>
+    {% for loop %}
+    <div class='column, is-half'>
+    </div>
+    {% endblock %}
+</macro>
